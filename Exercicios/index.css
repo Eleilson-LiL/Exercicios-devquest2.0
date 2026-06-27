@@ -1,0 +1,136 @@
+/* 📝 Instrucoes do Exercicio - 01
+Crie um contêiner `<div>` com altura fixa de 300px e três caixas dentro dele (por exemplo, `<div>Caixa 1</div>`, `<div>Caixa 2</div>`, `<div>Caixa 3</div>`). Aplique `display: flex` no contêiner e use a propriedade `align-items: center;` para que as caixas fiquem centralizadas verticalmente dentro do contêiner. */
+
+/* .container {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin: 10px;
+} */
+
+/* 📝 Instrucoes do Exercicio - 02
+Crie um contêiner `<div>` com altura fixa de 300px e três caixas dentro dele (por exemplo, `<div>Caixa 1</div>`, `<div>Caixa 2</div>`, `<div>Caixa 3</div>`). Aplique `display: flex` no contêiner e use a propriedade `align-items: flex-end;` para que as caixas fiquem alinhadas verticalmente na parte inferior do contêiner. */
+
+/* .container {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    margin: 10px;
+} */
+
+/* 📝 Instrucoes do Exercicio - 03 
+Crie um contêiner `<div>` com três caixas dentro dele (cada uma pode ser um `<div>` com um texto como 'Caixa 1', 'Caixa 2' e 'Caixa 3'). Aplique display: flex no contêiner e use a propriedade `justify-content: center;` para alinhar as caixas horizontalmente ao centro da página. */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+} */
+
+/* 📝 Instrucoes do Exercicio - 04
+Crie um contêiner `<div>` com três caixas dentro dele (por exemplo, `<div>Caixa 1</div>`, `<div>Caixa 2</div>`, `<div>Caixa 3</div>`). Aplique `display: flex` no contêiner e use a propriedade `justify-content: space-between;` para que a primeira caixa fique à esquerda, a última à direita e a do meio distribuída igualmente no espaço restante. */
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+} */
+/*  
+📝 Instrucoes do Exercicio - 05
+Crie um container com display: grid dividido em 3 colunas e 3 linhas. Defina as áreas do grid da seguinte forma: um header ocupando toda a primeira linha, um menu na primeira coluna, um conteúdo principal ocupando as duas colunas centrais e da direita, e um footer ocupando toda a última linha. Use grid-area para posicionar cada item. Atenção: os nomes das áreas devem ser exatamente "header", "menu", "content" e "footer". E todas as seções devem ser criadas com <div> no HTML. */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas:
+    "header header header"
+    "menu content content"
+    "footer footer footer";
+
+    height: 100vh;
+
+    .header{
+        grid-area:header;
+        background-color: lightblue;
+    }
+
+    .menu{
+        grid-area: menu;
+        background-color: lightgreen;
+    }
+
+    .content{
+        grid-area:content;
+        background-color: lightyellow;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: lightcoral;
+    }
+
+} */
+
+ /* 📝 Instrucoes do Exercicio - 06 
+Crie um container com display: grid e adicione 6 divs dentro dele. Configure o grid para ter 3 colunas de tamanhos iguais, 2 linhas de 150px cada e um gap de 20px entre os elementos. */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 150px;
+    gap: 20px;
+} */
+
+/* 📝 Instrucoes do Exercicio - 07
+Crie um container com 3 caixas lado a lado. Use flexbox para exibir as caixas em linha quando a tela tiver mais de 600px de largura. Quando a tela for menor que 600px, use uma media query para que as caixas fiquem empilhadas em coluna. */
+
+ /* .container {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+} */
+
+/* 📝 Instrucoes do Exercicio - 08
+Crie uma lista (<ul>) com três itens (<li>) e aplique display: inline nos itens da lista para que eles fiquem lado a lado, sem quebrar a linha. */
+
+ /* li {
+    display: inline;
+}   */
+/* 
+ 📝 Instrucoes do Exercicio - 09
+Crie uma página com três divs dentro de um container. Aplique a propriedade display: inline-block nas divs para que elas se alinhem horizontalmente, mas ainda respeitem o tamanho do seu conteúdo. Além disso, adicione uma margem de 10px entre as divs.  */
+
+/* div {
+    display: inline-block;
+    margin: 10px;
+} */
+
+/* 📝 Instrucoes do Exercicio - 10
+Crie no HTML três elementos: um parágrafo <p> com o texto 'Eu sou um parágrafo' e sem atributos; um parágrafo <p> com a classe 'destaque' e o texto 'Eu tenho uma classe'; e um parágrafo <p> com o id 'unico' e o texto 'Eu tenho um id'. No CSS, selecione o parágrafo comum pelo seletor de tag <p> e defina a cor azul. Selecione o parágrafo com a classe '.destaque' e defina a cor verde. Selecione o parágrafo com o id '#unico' e defina a cor vermelha */
+
+/* p {
+    color: blue;
+}
+
+.destaque {
+    color: green;
+}
+
+
+#unico {
+    color: red;
+} */
+
+/* 📝 Instrucoes do Exercicio - 11
+Crie uma página com um botão que deve ser visível em telas grandes, mas oculto em telas pequenas (menos de 600px de largura). Use a propriedade display: none em conjunto com uma media query para esconder o botão em telas pequenas e exibi-lo em telas maiores. */
+
+/* @media (max-width: 600px) {
+    .btn{
+        display: none;
+    }
+} */

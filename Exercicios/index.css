@@ -71,7 +71,7 @@ Crie um container com display: grid dividido em 3 colunas e 3 linhas. Defina as 
 
 } */
 
- /* 📝 Instrucoes do Exercicio - 06 
+/* 📝 Instrucoes do Exercicio - 06 
 Crie um container com display: grid e adicione 6 divs dentro dele. Configure o grid para ter 3 colunas de tamanhos iguais, 2 linhas de 150px cada e um gap de 20px entre os elementos. */
 
 /* .container {
@@ -84,7 +84,7 @@ Crie um container com display: grid e adicione 6 divs dentro dele. Configure o g
 /* 📝 Instrucoes do Exercicio - 07
 Crie um container com 3 caixas lado a lado. Use flexbox para exibir as caixas em linha quando a tela tiver mais de 600px de largura. Quando a tela for menor que 600px, use uma media query para que as caixas fiquem empilhadas em coluna. */
 
- /* .container {
+/* .container {
     display: flex;
     gap: 20px;
 }
@@ -98,7 +98,7 @@ Crie um container com 3 caixas lado a lado. Use flexbox para exibir as caixas em
 /* 📝 Instrucoes do Exercicio - 08
 Crie uma lista (<ul>) com três itens (<li>) e aplique display: inline nos itens da lista para que eles fiquem lado a lado, sem quebrar a linha. */
 
- /* li {
+/* li {
     display: inline;
 }   */
 /* 
@@ -134,3 +134,209 @@ Crie uma página com um botão que deve ser visível em telas grandes, mas ocult
         display: none;
     }
 } */
+
+
+/* 📝 Instrucoes do Exercicio - 12
+Crie uma seção com vários cards de produtos. Cada card deve conter uma imagem do produto, um título, uma descrição curta e um botão de compra. Use Flexbox para organizar os cards em linhas e aplique flex-wrap para que os cards se ajustem automaticamente em diferentes tamanhos de tela. Dentro de cada card, use Flexbox para alinhar a imagem, o texto e o botão de forma organizada. */
+
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.products {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+  gap: 10px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}   
+  */
+
+/* 📝 Instrucoes do Exercicio - 13
+Crie uma div dentro do body e use Flexbox para centralizar essa div horizontal e verticalmente. Utilize as propriedades align-items e justify-content no body para alcançar o resultado
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* 📝 Instrucoes do Exercicio - 14
+Crie um container com display: flex e quatro elementos filhos dentro dele. Use a propriedade flex-direction para organizar os itens em uma coluna (verticalmente). */
+
+/* .container {
+    display:flex;
+    flex-direction: column;
+} */
+
+/* 📝 Instrucoes do Exercicio - 15
+Crie uma seção com a classe 'cards' e adicione pelo menos 6 divs dentro dela representando os cards. Utilize Flexbox na seção e aplique a propriedade flex-wrap para que os cards quebrem linha quando não couberem na mesma linha. */
+
+/* .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+    flex: 1 1 200px;
+}
+
+div {
+    background-color:aquamarine;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 10%;
+    height: 20vh;
+}
+
+.cards {
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} */
+
+/* 📝 Instrucoes do Exercicio - 16
+Crie uma página com uma <div> de classe 'caixa' contendo o texto 'Eu sou uma caixa com box-sizing'. No CSS, aplique: (1) largura de 200px e altura de 100px; (2) cor de fundo clara; (3) padding de 20px; (4) borda de 3px sólida em azul; (5) margem de 30px; (6) use box-sizing: border-box para que a largura e altura considerem o padding e a borda no cálculo total. Observe a diferença em relação ao comportamento padrão do box model. */
+
+/* .caixa{
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid blue;
+    margin: 30px;
+    box-sizing: border-box;
+} */
+
+/* 📝 Instrucoes do Exercicio - 17
+Crie uma estrutura de página simples utilizando Flexbox. O layout deve conter: 1. Um header com logo e menu alinhados lado a lado. 2. Um main dividido em duas colunas: uma seção de conteúdo principal e uma barra lateral. 3. Uma seção de cards responsivos que se ajustam usando flex-wrap. 4. Um footer centralizado. Use as propriedades flex-direction, justify-content, align-items, align-content, flex-wrap e gap para organizar cada parte da página. */
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: antiquewhite;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: blueviolet;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: brown;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: aquamarine;
+} */
+
+/* 📝 Instrucoes do Exercicio - 18 
+Crie uma página com um título <h1>, um parágrafo e um link. Estilize com CSS usando estes valores fixos: (1) No <body>, use font-family: Arial, Helvetica, sans-serif. (2) No <h1>, use o texto "Estilização de Texto" e a cor #2c3e50. (3) No parágrafo <p>, use a cor #555555 e font-size: 16px. (4) No link <a>, use text-decoration: none; no estado :hover, use text-decoration: underline. (5) Dentro do parágrafo, envolva uma palavra com <span class="destaque"> e estilize .destaque com color: #e74c3c, font-weight: bold e text-transform: uppercase. */
+
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+}
+
+.destaque {
+    color: #e74c3c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+}
+ */
+
+/* 📝 Instrucoes do Exercicio - 19 
+Você tem uma lista de links de navegação. Por padrão, eles são display: inline e ficam lado a lado. Transforme cada link em um botão vertical usando display: block, adicionando também um pouco de padding e margem entre eles para ficarem visualmente separados. */
+
+/* a {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+} */
+
+
+
+

@@ -337,6 +337,32 @@ Você tem uma lista de links de navegação. Por padrão, eles são display: inl
     text-decoration: none;
 } */
 
+/* 📝 Instrucoes do Exercicio - 18
+Crie um container com display: grid e pelo menos 6 cards de produtos no HTML. No CSS, use grid-template-columns com repeat(auto-fit, minmax(200px, 1fr)) ou repeat(auto-fill, minmax(200px, 1fr)) para que os cards se ajustem ao tamanho da tela. Cada card deve ser um elemento com class="card" e, dentro dele, um título em <h2>, uma imagem em <img> e uma descrição em <p>. */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+ */
+
+
+
 
 
 

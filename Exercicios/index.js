@@ -187,7 +187,7 @@
 
 // console.log(multiplicar(5, 4))
 
-// 📝 Instrucoes do Exercicio - js - 11
+// 📝 Instrucoes do Exercicio - js - 12
 // Crie um array chamado `numeros` com os valores de 1 a 5. Em seguida, percorra esse array usando um loop `for` e exiba cada número no console. Depois, use o método `forEach` para percorrer novamente o array e exibir os números no console.
 
 // const numeros = [1, 2, 3, 4, 5];
@@ -200,7 +200,7 @@
 //     console.log(numero);
 // });
 
-// 📝 Instrucoes do Exercicio - js - 12
+// 📝 Instrucoes do Exercicio - js - 13
 // Crie um array chamado `frutas` que contenha pelo menos 4 frutas diferentes. Depois, use `console.log()` para exibir o array completo e também exiba apenas a segunda fruta do array.
 
 // const frutas = ["maçã", "banana", "laranja", "uva"];
@@ -210,7 +210,7 @@
 // console.log(frutas[1])
 
 
-// 📝 Instrucoes do Exercicio - js - 13
+// 📝 Instrucoes do Exercicio - js - 14
 // Crie um array chamado `produtos`, onde cada item é um objeto com as propriedades `nome` e `preco`. Adicione pelo menos 4 produtos diferentes. Depois, use o método `filter()` para criar um novo array chamado `produtosCaros`, contendo apenas os produtos com preço maior que 50. Por fim, exiba os dois arrays (`produtos` e `produtosCaros`) no console. 
 
 // const produtos = [
@@ -241,7 +241,7 @@
 
 // console.log(produtosCaros);
 
-// 📝 Instrucoes do Exercicio - js - 14
+// 📝 Instrucoes do Exercicio - js - 15
 // Crie um array chamado `usuarios`, onde cada item é um objeto com as propriedades `id` e `nome`. Adicione pelo menos 4 usuários diferentes. Depois, use o método `find()` para procurar o usuário que tenha `id` igual a 3. Armazene o resultado em uma variável chamada `usuarioEncontrado` e exiba no console o objeto retornado
 
 // const usuarios = [
@@ -261,14 +261,14 @@
 //         id:4,
 //         nome:"danilo"
 //     }
-    
+
 // ];
 
 // const usuarioEncontrado = usuarios.find(user =>user.id===3);
 
 // console.log(usuarioEncontrado);
 
-// 📝 Instrucoes do Exercicio - js - 15
+// 📝 Instrucoes do Exercicio - js - 16
 // Crie um array chamado `alunos`, onde cada item é um objeto com as propriedades `nome` e `nota`. Adicione pelo menos 3 alunos diferentes. Depois, use o método `map()` para criar um novo array chamado `alunosAtualizados`, onde cada aluno terá a mesma estrutura, mas a propriedade `nota` deve ser aumentada em 1 ponto. Por fim, exiba os dois arrays (`alunos` e `alunosAtualizados`) no console para comparar.
 
 // const alunos = [
@@ -284,7 +284,7 @@
 //         nome: "maria",
 //         nota: 70,
 //     },
-    
+
 // ]
 
 // console.log(alunos);
@@ -299,7 +299,7 @@
 // console.log(alunosAtualizados);
 
 
-// 📝 Instrucoes do Exercicio - js - 16
+// 📝 Instrucoes do Exercicio - js - 17
 // Crie um objeto chamado `pessoa` com as propriedades: `nome` (string), `idade` (número) e `cidade` (string). Depois, use `console.log()` para exibir uma frase no formato: 'Meu nome é NOME, tenho IDADE anos e moro em CIDADE'.
 
 // const pessoa = {
@@ -311,7 +311,7 @@
 
 // console.log(`meu nome é ${pessoa.nome}, tenho ${pessoa.idade} anos e moro em ${pessoa.cidade} `)
 
-// 📝 Instrucoes do Exercicio - js - 17
+// 📝 Instrucoes do Exercicio - js - 18
 // Crie um array chamado `carrinho`, onde cada item é um objeto com as propriedades `produto` e `preco`. Adicione pelo menos 3 itens diferentes no array. Depois, use o método `reduce()` para calcular o valor total de todos os preços e armazene o resultado em uma variável chamada `total`. Exiba o valor total no console.
 
 // let carrinho = [
@@ -335,7 +335,7 @@
 
 // console.log(total);
 
-// 📝 Instrucoes do Exercicio - js - 18
+// 📝 Instrucoes do Exercicio - js - 19
 // Crie um array chamado `numeros` contendo os valores [10, 20, 30, 40]. Depois, use o método `reduce()` para somar todos os valores do array e armazene o resultado em uma variável chamada `soma`. Exiba o valor da soma no console.
 // let numeros = [10, 20, 30, 40]
 
@@ -346,7 +346,7 @@
 // console.log(soma);
 
 
-// 📝 Instrucoes do Exercicio - js - 19
+// 📝 Instrucoes do Exercicio - js - 20
 // Crie um array chamado `numeros1` com os valores [1, 2, 3]. Depois, crie outro array chamado `numeros2` com os valores [4, 5, 6]. Use o spread operator para criar um novo array chamado `todosNumeros` que junte os dois arrays. Em seguida, crie um objeto chamado `pessoa` com as propriedades `nome` e `idade`. Use o spread operator para criar um novo objeto chamado `pessoaAtualizada`, copiando todas as propriedades do objeto original e adicionando a propriedade `cidade`. Exiba todos os resultados no console.
 
 // const numeros1 = [1, 2, 3]
@@ -369,7 +369,7 @@
 // console.log(pessoaAtualizada);
 
 
-// 📝 Instrucoes do Exercicio - js - 20
+// 📝 Instrucoes do Exercicio - js - 21
 // Crie um objeto chamado `usuario` com as propriedades `nome` e `idade`. Depois, faça a desestruturação desse objeto em variáveis separadas: `nome`, `idade` e `cidade`. Caso `cidade` não exista no objeto, atribua o valor padrão `'Desconhecida'`. Use também o rest operator para capturar as demais propriedades do objeto em uma variável chamada `resto`. Em seguida, crie um novo objeto chamado `novoUsuario`, juntando `nome`, `cidade` e todas as propriedades capturadas em `resto`. Exiba no console o objeto `novoUsuario`.
 
 // const usuario = {
@@ -383,7 +383,60 @@
 
 // console.log(novoUsuario);
 
+// 📝 Instrucoes do Exercicio - js - 22
+// Crie uma função assíncrona que faça uma requisição à API https://jsonplaceholder.typicode.com/posts usando fetch com async/await. Depois, exiba no console o título e o corpo dos primeiros 5 posts retornados. try/catch é opcional.
+
+// async function carregarPost() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+//         const posts = await response.json();
+//         posts.slice(0,5).forEach(post => {
+//             console.log(`Titulo: ${post.title}`);
+//             console.log(`Corpo: ${post.body}`);
+//             console.log('-------------------------');
+//         });
+//     } catch (error) {
+//         console.error('Erro ao carregar posts', error);
+//     }
+// }
+
+// carregarPost();
 
 
+// 📝 Instrucoes do Exercicio - js - 23
+// Crie uma função assíncrona que receba manualmente um ID de usuário (1 a 10) como parâmetro e faça uma requisição à API https://jsonplaceholder.typicode.com/users/{id} usando fetch com async/await. Depois, exiba no console o nome, e-mail e endereço (rua e cidade) do usuário retornado. try/catch é opcional.
+
+// async function buscarUsuario(id) {
+//     try {
+//         const response = await 
+//         fetch (`https://jsonplaceholder.typicode.com/users/${id}`);
+//         const user =await response.json();
+//         console.log(`Nome: ${user.name}`);
+//         console.log(`Email: ${user.email}`);
+//         console.log(`Endereço: ${user.address.street}, ${user.address.city}`);
+//     } catch (error) {
+//         console.error('Erro ao buscar usuário', error);
+//     }
+// }
+
+// buscarUsuario(3);
+
+// 📝 Instrucoes do Exercicio - js - 24
+// Crie uma função assíncrona que faça uma requisição à API pública https://jsonplaceholder.typicode.com/users usando fetch com async/await. Depois, exiba no console os nomes e e-mails dos usuários retornados pela API. try/catch é opcional.
+
+// async function carregarUsuarios() {
+//     try {
+//         const response = await
+//             fetch('https://jsonplaceholder.typicode.com/users');
+//         const users = await response.json();
+//         users.forEach(user => {
+//             console.log(`${user.name} - ${user.email}`);
+//         });
+//     } catch (error) {
+//         console.error('Erro ao carregar usuários', error);
+//     }
+// }
+
+// carregarUsuarios();
 
 
